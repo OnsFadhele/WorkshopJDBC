@@ -44,6 +44,7 @@ public class ServicePersonne implements IService<Personne>{
 
     @Override
     public List<Personne> getAll() throws SQLException {
+
         String requete="select * from personne";
         Statement stmt= conn.createStatement();
         ResultSet rs= stmt.executeQuery(requete);
